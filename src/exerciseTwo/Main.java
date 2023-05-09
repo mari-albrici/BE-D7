@@ -8,7 +8,14 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Function 1
+		functionOne();
+		functionTwo();
+		functionThree();
+
+	}
+
+	public static void functionOne() {
+
 		List<Integer> listOne = new ArrayList<>();
 
 		int n = 10;
@@ -22,7 +29,10 @@ public class Main {
 		listOne.sort(null);
 		System.out.println(listOne);
 
-		// Function 2
+	}
+
+	public static void functionTwo() {
+
 		List<String> listTwo = new ArrayList<>();
 
 		listTwo.add("Luke");
@@ -36,8 +46,9 @@ public class Main {
 		Collections.reverse(listTwo);
 
 		System.out.println(listTwo);
+	}
 
-		// Function 3
+	public static void functionThree() {
 		List<Integer> oddOrEven = new ArrayList<>();
 
 		boolean isEven = false;
@@ -55,7 +66,5 @@ public class Main {
 				System.out.println(oddOrEven.get(i));
 			}
 		}
-
 	}
-
 }
