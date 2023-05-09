@@ -19,13 +19,12 @@ public class ContactsList {
 		ContactsList.remove(name);
 	}
 
-	public String searchContactByNumber(String number) {
+	public void searchContactByNumber(String number) {
 		for (String name : ContactsList.keySet()) {
 			if (ContactsList.get(name).equals(number)) {
-				return name;
+				System.out.println(name + ":" + number);
 			}
 		}
-		return null;
 	}
 
 	public String searchContactByName(String name) {

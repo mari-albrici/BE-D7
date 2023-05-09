@@ -17,6 +17,8 @@ public class Main {
 		contactsList.deleteContact("Elisa");
 		contactsList.printContactsList();
 
+		contactsList.searchContactByNumber("123456789");
+
 	}
 
 }

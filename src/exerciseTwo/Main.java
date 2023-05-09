@@ -10,37 +10,45 @@ public class Main {
 
 		// Function 1
 		int n = 10;
-		List<Integer> myList = new ArrayList<>();
+
+		List<Integer> listOne = new ArrayList<>();
+
 		for (int i = 0; i < n; i++) {
-			myList.add((int) (Math.random() * 100) + 1);
+			listOne.add((int) (Math.random() * 100) + 1);
 		}
-		myList.sort(null);
-		System.out.println(myList);
+
+		listOne.sort(null);
+		System.out.println(listOne);
 
 		// Function 2
-		List<String> initialList = new ArrayList<>();
-		initialList.add("Ciao");
-		initialList.add("Sono");
-		initialList.add("Matteo");
-		System.out.println(initialList);
+		List<String> listTwo = new ArrayList<>();
 
-		Collections.reverse(initialList);
-		System.out.println(initialList);
+		listTwo.add("Banane");
+		listTwo.add("in");
+		listTwo.add("Pigiama");
+
+		System.out.println(listTwo);
+
+		Collections.reverse(listTwo);
+
+		System.out.println(listTwo);
 
 		// Function 3
-		List<Integer> pariDispari = new ArrayList<>();
-		boolean isEven = false;
-		pariDispari.add(0);
-		pariDispari.add(1);
-		pariDispari.add(2);
-		pariDispari.add(3);
-		pariDispari.add(4);
+		List<Integer> oddOrEven = new ArrayList<>();
 
-		for (int i = 0; i < pariDispari.size(); i++) {
+		boolean isEven = false;
+
+		oddOrEven.add(0);
+		oddOrEven.add(1);
+		oddOrEven.add(2);
+		oddOrEven.add(3);
+		oddOrEven.add(4);
+
+		for (int i = 0; i < oddOrEven.size(); i++) {
 			if (isEven && i % 2 == 0) {
-				System.out.println(pariDispari.get(i));
+				System.out.println(oddOrEven.get(i));
 			} else if (!isEven && i % 2 != 0) {
-				System.out.println(pariDispari.get(i));
+				System.out.println(oddOrEven.get(i));
 			}
 		}
 
