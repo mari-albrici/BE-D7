@@ -9,13 +9,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		// Function 1
-		int n = 10;
-
 		List<Integer> listOne = new ArrayList<>();
+
+		int n = 10;
 
 		for (int i = 0; i < n; i++) {
 			listOne.add((int) (Math.random() * 100) + 1);
 		}
+
+		System.out.println(listOne);
 
 		listOne.sort(null);
 		System.out.println(listOne);
@@ -23,9 +25,11 @@ public class Main {
 		// Function 2
 		List<String> listTwo = new ArrayList<>();
 
-		listTwo.add("Banane");
-		listTwo.add("in");
-		listTwo.add("Pigiama");
+		listTwo.add("Luke");
+		listTwo.add("I");
+		listTwo.add("am");
+		listTwo.add("your");
+		listTwo.add("father");
 
 		System.out.println(listTwo);
 
