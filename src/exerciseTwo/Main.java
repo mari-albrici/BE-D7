@@ -49,21 +49,22 @@ public class Main {
 	}
 
 	public static void functionThree() {
-		List<Integer> oddOrEven = new ArrayList<>();
+
+		List<Integer> listThree = new ArrayList<>();
 
 		boolean isEven = false;
 
-		oddOrEven.add(0);
-		oddOrEven.add(1);
-		oddOrEven.add(2);
-		oddOrEven.add(3);
-		oddOrEven.add(4);
+		listThree.add(0);
+		listThree.add(1);
+		listThree.add(2);
+		listThree.add(3);
+		listThree.add(4);
 
-		for (int i = 0; i < oddOrEven.size(); i++) {
+		for (int i = 0; i < listThree.size(); i++) {
 			if (isEven && i % 2 == 0) {
-				System.out.println(oddOrEven.get(i));
+				System.out.println(listThree.get(i));
 			} else if (!isEven && i % 2 != 0) {
-				System.out.println(oddOrEven.get(i));
+				System.out.println(listThree.get(i));
 			}
 		}
 	}

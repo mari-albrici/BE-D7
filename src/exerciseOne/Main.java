@@ -7,13 +7,14 @@ import java.util.Set;
 public class Main {
 
 	public static void main(String[] args) {
+
+		Set<String> words = new HashSet<String>();
+		Set<String> duplicateWords = new HashSet<String>();
+
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Insert a number:");
 		int wordNo = input.nextInt();
-
-		Set<String> words = new HashSet<String>();
-		Set<String> duplicateWords = new HashSet<String>();
 
 		for (int i = 0; i < wordNo; i++) {
 			System.out.println("Insert word no." + (i + 1) + ":");
@@ -23,7 +24,7 @@ public class Main {
 			}
 		}
 
-		System.out.println("Duplicate words are:");
+		System.out.println("There are multiples of the word(s):");
 		for (String word : duplicateWords) {
 			System.out.println(word);
 		}
