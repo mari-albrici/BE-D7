@@ -1,6 +1,8 @@
 package exerciseOne;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -9,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Set<String> words = new HashSet<String>();
-		Set<String> duplicateWords = new HashSet<String>();
+		List<String> duplicateWords = new ArrayList<String>();
 
 		Scanner input = new Scanner(System.in);
 
